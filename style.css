@@ -5,21 +5,25 @@
 body {
     margin: 0;
     display: flex;
+    font-size: 1.2rem;
 }
 
 .container {
     flex: 0 1 60vw;
+    padding-top: 96px;
 }
 
-.picture {
-    flex: 0 1 40vw;
-    height: 100vh;
-    width: 40vw;
+h2 {
+    margin-bottom: 16px;
 }
 
-form > p {
-    display: flex;
-    flex-direction: column;
+.container p:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+.container > p,
+.container > form {
+    padding: 0 128px;
 }
 
 .image {
@@ -29,6 +33,45 @@ form > p {
     object-position: center bottom;
 }
 
+p {
+    margin-top: 24px;
+}
+
+.picture {
+    flex: 0 1 40vw;
+    height: 100vh;
+    width: 40vw;
+}
+
+div > p {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    border: 0 solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form > div {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0 64px;
+}
+
 input {
     width: 15vw;
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+label {
+    font-size: 0.8rem;
 }
