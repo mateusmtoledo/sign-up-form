@@ -1,28 +1,39 @@
 :root {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    --dark: #15232b;
+    --lightblue: #CCE9FF;
+    --beige: #dac6ab;
+    --darkblue: #182831;
 }
 
 body {
     margin: 0;
     display: flex;
     font-size: 1.2rem;
+    background-color: var(--darkblue);
+    color: var(--lightblue);
 }
 
 .container {
     flex: 0 1 60vw;
-    padding-top: 96px;
+    padding-top: 64px;
 }
 
 h2 {
-    margin-bottom: 16px;
+    margin: 0;
+    padding: 32px 128px 16px;
+    background-color: var(--dark);
 }
 
-.container > p:nth-child(2) {
+.paragraph-1,
+.paragraph-2 {
     margin-bottom: 32px;
+    font-weight: 700;
 }
 
 .container > p,
-.container > form {
+form > div {
     padding: 0 128px;
 }
 
@@ -49,19 +60,33 @@ div > p {
 }
 
 button {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    padding: 8px 16px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    margin-left: 128px;
+    padding: 8px 32px;
     font-size: 1.2rem;
-    border-radius: 3px;
-    border: 0 solid black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 2px 4px 8px 0 rgba(73, 115, 135, 0.2), 2px 4px 3px 0 rgba(73, 115, 135, 0.2);
+    background-color: var(--lightblue);
+    color: var(--dark);
+    font-weight: 700;
+}
+
+button:active {
+    position: relative;
+    left: 1px;
+    top: 1px;
+    box-shadow: none;
 }
 
 form > div {
     display: flex;
     flex-flow: row wrap;
     gap: 0 64px;
+    background-color: var(--dark);
+    padding-bottom: 32px;
+    box-shadow: 0 4px 4px 0 rgba(37, 58, 68, 0.2), 0 8px 8px 0 rgba(30, 48, 56, 0.2);
 }
 
 input {
@@ -74,4 +99,11 @@ input {
 
 label {
     font-size: 0.8rem;
+    font-weight: 700;
+}
+
+a {
+    font-weight: 700;
+    color: var(--beige);
+    text-decoration: none;
 }
