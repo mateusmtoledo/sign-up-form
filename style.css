@@ -82,7 +82,7 @@ h1 {
     flex: 0 1 40vw;
     height: 100vh;
     width: 40vw;
-    position: relative;
+    position: fixed;
 }
 
 div > p {
@@ -137,4 +137,8 @@ a {
     font-weight: 700;
     color: var(--beige);
     text-decoration: none;
+}
+
+.picture-container {
+    width: 40vw;
 }
