@@ -20,6 +20,7 @@ body {
     font-size: 1.2rem;
     background-color: var(--darkblue);
     color: var(--white);
+    height: 100vh;
 }
 
 input[type="password"]:invalid {
@@ -27,8 +28,10 @@ input[type="password"]:invalid {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 0 1 60vw;
-    padding-top: 96px;
 }
 
 h2 {
